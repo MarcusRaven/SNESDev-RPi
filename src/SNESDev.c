@@ -249,7 +249,7 @@ S16 main(S16 argc, char *argv[]) {
 					if (button.pressedCtr == 1 && button.duration >= 1) {
 						uinput_kbd_write(&uinp_kbd, KEY_R, 0, EV_KEY);
 					} else if (button.pressedCtr == 1 && button.duration >= 1) {
-						// Sending ESC
+						// Sending ESC - Modified for ESC Key ONLY.
 						uinput_kbd_write(&uinp_kbd, KEY_ESC, 1, EV_KEY);
 						usleep(50000);
 						uinput_kbd_write(&uinp_kbd, KEY_ESC, 0, EV_KEY);
